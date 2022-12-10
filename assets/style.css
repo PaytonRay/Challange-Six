@@ -1,0 +1,62 @@
+header {
+    height: 50px;
+    margin-bottom: 20px;
+}
+.search {
+    background-color: rgb(183, 182, 182);
+    border-radius: 3px;
+    position: relative;
+    box-shadow: 1px 1px 2px gray;
+}
+table {
+    border-radius: 8px;
+    margin: 6px;
+    width: 100%;
+}
+th {
+    border-bottom-color: rgb(223, 223, 223);
+    border-bottom-style: solid;
+     text-align: left;
+    border-bottom-width: 1px;
+    width: max-content;
+    border-radius: 6px;
+    background-color: white
+}
+label{
+    padding-top: 10px;
+}
+p{
+    font-size: medium;
+}
+th:hover{
+    
+    cursor: pointer;
+    background-color: rgba(228, 47, 27, 0.603)
+}
+.greenUV{
+    background-color: green;
+}
+.orangeUV{
+    background-color: orange;
+}
+.redUV{
+    background-color: rgb(226, 20, 20);
+
+}
+#UV{
+    color: white;
+    border-radius: 5px;
+    padding-left: 6px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+}
+#current{
+    line-height: 2;
+}
+div.card-body{
+    padding: 10px;
+}
+.fcard{
+    box-shadow: 1px 1px 2px gray;
+    display: inline-block;
+}

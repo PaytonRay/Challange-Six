@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+
+  <body>
+
+      <div class="container-fluid text-center text-dark bg-danger">
+          <h2>Weather Dashboard</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-4 search">
+            <form>
+              <label for="cityInput">Search for a City</label>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="City" id="cityInput">
+                <div class="input-group-append">
+                 <button type="submit" class="btn btn-primary" id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+              </div>
+            </form>
+
+
+            <div class="row">
+              <table class="table" >
+                <tbody id="searchHistory">
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+
+          <div class="col-8 float-right">
+            <div class="row">
+              <div class="col-12">
+                <div class="card bg-light text-dark rem shadow-lg p-4 mb-8 bg-white">
+                  <div id="current">
+                    <div>
+                      <h3>
+                        <span id="cityName"></span>
+                        <span id="currentDay"></span>
+                        <span id="weatherIcon"></span>
+                      </h3>
+                    </div>
+                    <div id="temperature"></div>
+                    <div id="humidity"></div>
+                    <div id="windSpeed"></div>
+                    <div id="uv-display"></div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+
+          
+            <div class="row">
+              <div class="col-12">
+                <h4>5-Day Forcast</h4>
+                <div class="row align-items-center forecast">
+                  <div class="col-sm" id="day1"></div>
+                  <div class="col-sm" id="day2"></div>
+                  <div class="col-sm" id="day3"></div>
+                  <div class="col-sm" id="day4"></div>
+                  <div class="col-sm" id="day5"></div>
+                </div>
+              </div>  
+            </div>     
+          </div> 
+        </div>
+      </div>
+  
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/script.js"></script>
+
+  </body>
+</html>
